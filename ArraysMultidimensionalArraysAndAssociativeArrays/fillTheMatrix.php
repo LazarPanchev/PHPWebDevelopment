@@ -28,22 +28,15 @@ switch ($pattern){
 
         break;
     case "B":
-        $row=0;
-        $col=0;
-        while ($counter<=$n*$n){
-            for($i=0;$i<$n;$i++){
-                $matrix[$i][$row]=$counter++;
+        for($i=0;$i<$n;$i++){
+            for($j=0;$j<$n;$j++){
+				if($i%2 ==0){
+					$matrix[$j][$i]=$counter++;
+				}else{
+					$matrix[$n-1-$j][$i]=$counter++;
+				}
             }
 
-            $col++;
-            if($counter>=$n*$n){
-                break;
-            }
-            for($i=$n-1;$i>=0;$i--){
-                $matrix[$i][$col]=$counter++;
-            }
-            $col++;
-            $row+=2;
         }
 
 
