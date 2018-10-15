@@ -30,7 +30,7 @@ foreach ($products as $product) {
     echo '<td>' . $productId . '</td>';
     echo '<td>' . $productName . '</td>';
     echo '<td>' . $categoryName . '</td>';
-    echo '<td><a href="viewProduct.php?product_id=' . $id . '"</a>Details</td>';
+    echo '<td><a href="viewProduct.php?product_id=' . $id .'"</a>Details</td>';
     echo '<td><a href="createEditProduct.php?product_id=' . $id . '"</a>Edit</td>';
     echo '<td><a href="deleteProduct.php?product_id=' . $id . '"</a>Delete</td>';
     echo '</tr>';

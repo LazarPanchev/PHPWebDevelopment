@@ -32,7 +32,7 @@ class Products
     public function getOne(int $product_id)
     {
         $statement = $this->db->prepare('SELECT p.product_id, p.product_name, p.price,
-                                               p.description, c.cat_name, p.create_date, p.last_update, p.cat_id
+                                               p.description, c.cat_name, p.create_date, p.last_update, p.cat_id, p.image
                                                FROM products AS p
                                                INNER JOIN categories AS c
                                                ON p.cat_id = c.cat_id
@@ -76,6 +76,16 @@ class Products
                                                    WHERE product_id=:productId');
         $statement->bindParam('productId',$product_id);
         return $statement->execute();
+    }
+
+    public function uploadImage(string $imageName, int $product_id){
+        $statement = $this->db->prepare('UPDATE products 
+                                                   SET image=:imageName
+                                                   WHERE product_id= :productId');
+        $statement->bindParam('imageName',$imageName);
+        $statement->bindParam('productId',$product_id);
+
+        $statement->execute();
     }
 }
 
