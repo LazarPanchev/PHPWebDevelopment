@@ -1,0 +1,25 @@
+table{
+    border-width: 2px;
+    border-color: blueviolet;
+}
+
+thead {
+    background-color: wheat;
+    color: black;
+}
+
+tbody{
+    background-color: bisque;
+    color: crimson;
+}
+.paragraph{
+   font-size: 20px;
+   color: red;
+}
+
+.success{
+    font-size: 20px;
+    color: greenyellow;
+}
+
+
