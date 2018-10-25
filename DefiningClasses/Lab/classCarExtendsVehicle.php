@@ -1,5 +1,5 @@
 <?php
-include ('defineAClassVehicle.php');
+include('defineAClassVehicle.php');
 
 class Car extends Vehicle{
     /**
