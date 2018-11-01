@@ -1,0 +1,15 @@
+thead {
+    background-color: wheat;
+    color: black;
+}
+
+tbody{
+    background-color: bisque;
+    color: crimson;
+}
+.paragraph{
+   color: lime;
+   text-shadow: bisque;
+}
+
+
