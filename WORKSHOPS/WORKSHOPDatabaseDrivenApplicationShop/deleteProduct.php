@@ -12,7 +12,7 @@ if(isset($_POST['product_id'])){
     $product_id= $_GET['product_id'];
     $products_obj->deleteProduct($product_id);
 
-    header('Location: ./index.php?mode=3');
+    header('Location: ./list_products.php?mode=3');
     exit;
     }
 }
