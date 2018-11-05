@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+Name: <input type="text" id="name" />
+<button onclick="loadData()">Load</button>
+<script>
+    function loadData() {
+        let name=$('#name').val();
+        $.get("webservice.php", function (data) { //data comes from php
+            newData=JSON.parse(data);
+            if(name!==undefined) {
+                alert(name + ' ' + newData[name]);
+            }
+        })
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+1.all repos:   https://api.github.com/users/testnakov/repos
+2.issue 1:   https://api.github.com/repos/testnakov/test-nakov-repo/issues/1.json
+3.create issue:   https://api.github.com/repos/testnakov/test-nakov-repo/issues
+                  {
+                   "title": "I have created an issue",
+                   "body": "Minor bug",
+                   "labels": ["bug","minor"]
+                  }
+
