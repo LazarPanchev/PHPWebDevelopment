@@ -1,0 +1,17 @@
+4. allBooks:   https://testapp2-76a48.firebaseio.com/.json
+5. getBook1:   https://testapp2-76a48.firebaseio.com/1/.json
+6. createBookWithId3:   https://testapp2-76a48.firebaseio.com/3/.json
+                        {
+                         "title": "New Book",
+                         "author": "New Author"
+                        }
+7.patchBook:   https://testapp2-76a48.firebaseio.com/3/.json
+                {
+                 "year": "1981",
+                 "author": "New Changed"
+                }
+8.patchBookWithId7:   https://testapp2-76a48.firebaseio.com/7/.json
+                      {
+                       "year": 2000
+                      }
+
